@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.redirect h1 {
+    padding-top: 300px;
+    padding-left: 550px;
+    color: blue;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+.bar {
+    background-color: white;
+    border: 1px solid black;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bar-ls {
+    display: flex;
+    align-items: center;
+}
+
+.bar-ls a {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.bar-ls img {
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 5px;
+}
+
+.bar-rs {
+    display: flex;
+    align-items: center;
+}
+
+.bar-rs a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 30px;
+    margin-right: 5px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding-left: 19px;
+    padding-bottom: 12px;
+    padding-right: 19px;
+    padding-top: 12px;
+}
+
+.bar-rs button {
+    background-color: blue;
+    border-radius: 5px;
+    border-color: transparent;
+    /* margin-right: 50px; */
+    height: 48px;
+    width: 150px;
+    font-size: medium;
+    color: white;
+}
+
+.boxes {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 100svw;
+    max-width: 1200px;
+    height: 200px;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.legend {
+    font-size: 22px;
+    background-color: rgb(24, 24, 251);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: -34px;
+    z-index: 1;
+}
+
+.courses {
+    border: 1px, solid, black;
+    border-radius: 5px;
+    width: 159.4px;
+    min-height: 140px;
+    margin: 20px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.courses:hover {
+    border: 3px solid rgb(0, 255, 242);
+}
+
+.half {
+    color: yellow;
+}
+
+.courses a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.courses img {
+    height: 70px;
+    width: 70px;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-image: url('/udemy-pic0.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70svh;
+}
+
+.border h1 {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 85px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recommended-courses-box {
+    display: flex;
+    gap: 15px;
+    max-width: 1170;
+    width: 100svw;
+    overflow-x: auto;
+}
+
+.recommended-courses {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    align-items: start;
+    padding-left: 5px;
+    border: 1px solid blue;
+    border-radius: 3px;
+    min-width: 180px;
+    min-height: 270px;
+}
+
+.recommended-courses a {
+    text-decoration: none;
+    color: white;
+}
+
+.text {
+    font-size: 13px;
+    color: white;
+}
+
+.one>p {
+    font-size: 22;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.section-buts button {
+    width: 50px;
+    height: 50px;
+    border-radius: 45%;
+    border-color: blue;
+}
+
+.section-buts-one {
+    border: 1px solid blue;
+    width: 250px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+.section-buts {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.stars {
+    color: yellow;
+}
+
+.lucide-star {
+    width: 20px;
+    height: 20px;
+}
+
+.article-one {
+    background-color: whitesmoke;
+}
+
+.article-two {
+    margin-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 30px;
+}
+.article-two video{
+    width: 50%;
+}
+.article-two-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 20px;
+    width: 50%;
+}
+/* .article-video {
+    width: 45%;
+} */
+
+.article-two-text h1 {
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.article-three {
+    background-color: whitesmoke;
+}
+
+.article-three-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 40px;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 80px;
+}
+
+.article-three-text-boxes {
+    display: flex;
+    gap: 30px;
+}
+
+.article-text{
+    border: 1px solid grey;
+    width: 30%;
+    height: auto;
+    border-bottom-right-radius: 50px;
+    padding: 40 20 10 20px;
+    text-align: start;
+    font-size: 20px;
+}
+
+.article-three-review {
+    padding-top: 30px;
+    padding-left: 220px;
+    padding-right: 200px;
+    display: flex;
+    gap: 60px;
+}
+
+.lucidee-star {
+    color: blue;
+    width: 15px;
+    height: 15px;
+}
+
+.facebook-review {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.course-report-review {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.switch-up-review {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trust-pilot-review {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.g2-review {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-arrow {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.lucide-arrow-right {
+    color: blue;
+}
+
+.review-arrow a {
+    color: blue;
+}
+
+.review-arrow :hover {
+    color: rgb(15, 15, 47);
+}
+
+.article-three-pic-box {
+    border: 1px solid grey;
+    background-color: honeydew;
+    display: flex;
+    gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.article-three-pic-box img {
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.article-three-pic-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18 px;
+}
+
+.article-three-pic-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+}
+
+.blue-but {
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-color: blue;
+    padding: 6px 10px 6px 10px;
+}
+
+.green-but {
+    background-color: rgb(3, 139, 96);
+    color: black;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-color: rgb(3, 139, 96);
+    padding: 6px 10px 6px 10px;
+}
+
+.government {
+    border: 1px solid grey;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    height: 130px;
+    display: flex;
+    padding-left: 40px;
+}
+
+.gov-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.government img {
+    width: 300px;
+}
+
+.learn img {
+    width: 100%;
+    height: 300px;
+}
+
+#button {
+    width: 200px;
+    height: 50px;
+    background-color:rgb(3, 126, 126);
+    color: black;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+p:hover {
+    background-color: darkolivegreen;
+}
+
+.hidden {
+    display: none;
+}
+
+.mainflex{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.flex-1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+ }
+ .flex-1 img{
+    width: 70%;
+ }
+
+/* For Mobile Screen */
+@media (max-width: 600px) {
+    .hidden-sm{
+        display: none;
+    }
+    .article-two {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-two video{
+        width: 100%;
+    }
+    .article-two-text{
+        width: 100%;
+    }
+    .article-three-text-boxes
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .article-text{
+        width: 100%;
+    }
+    .article-three-review{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 50%;
+        justify-content: center;
+        gap: 30px;
+    }
+    .article-three-pic-box{
+        display: flex;
+        flex-direction: row;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 5px;
+        padding-right: 6px;
+        padding-left: 5px;
+        margin-top: 20px
+    }
+    .article-three-pic-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-three-pic-box img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .article-three-pic-buttons
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .blue-but{
+        width: 100%;
+    }
+    .g2-review
+    {
+        display: none;
+    }
+    
+}
+ 
+/* For Tablet Screen */
+@media (min-width: 600px) and (max-width: 1024px) 
+{
+    .hidden-lg{
+        display: none;
+    }
+}
+
+/* For Tablet Screen */
+@media (min-width: 1024px) {
+    .hidden-xl{
+        display: none;
+    }
+}
+@media (min-width: 1024px) {
+    .setting-width{
+        flex-direction: row;
+        display: flex;
+        
+        
+    }
+}
+@media (min-width: 1024px) {
+    .article-three-pic-box{
+        flex-direction: flex;
+     }
+
+}
